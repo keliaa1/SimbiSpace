@@ -19,7 +19,7 @@ It’s a digital space where I share thoughts, stories, and lessons from my pers
 - [Next.js](https://nextjs.org/)
 - [React](https://react.dev/)
 - [Tailwind CSS](https://tailwindcss.com/)
-- [TypeScript](https://www.typescriptlang.org/) *(optional)*
+- [TypeScript](https://www.typescriptlang.org/) 
 
 ---
 
@@ -30,7 +30,7 @@ Kelia Simbi
 ✨ Sharing thoughts, code, and creativity through words and design.
 
 GitHub: @keliaa1
-Instagram: @__simbiii_
+Instagram: @_simbiii__
 
 📄 License
 This project is open source and available under the MIT License.
