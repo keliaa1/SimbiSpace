@@ -2,12 +2,11 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <h1 className="text-4xl font-bold text-zinc-900 dark:text-zinc-50">
-        Welcome to SimbiSpace's corner on the internet!!!!! <br/>  What would you like to visit?<br />
-        <a href="">View Portfolio</a><br />
-        <a href="">Visit Blog</a>
-      </h1>
+    
+    <div className="bg-[#F7EEE9] min-h-screen flex flex-col items-center justify-center">
+      <h2 className="text-6xl text-[#A18072] font-bold mb-5 ">Welcome to SimbiSpace</h2>
+      <span><i>A personal blog made by Kelia</i></span>
+      <a className="bg-[#8B6F47] text-white font-semibold px-4 py-4 rounded-4xl mt-8" href="">View my inner thoughts!</a>
     </div>
   );
 }
