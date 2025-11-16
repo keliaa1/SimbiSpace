@@ -1,9 +1,3 @@
-
----
-
-# 📝 **2. Example Post — `react-tips.md`**
-
-```markdown
 ---
 title: "10 Useful React Tips Every Developer Should Know"
 date: "2025-01-15"

@@ -1,9 +1,3 @@
-
----
-
-# 📝 **2. `mastering-react-hooks.md`**
-
-```markdown
 ---
 title: "Mastering React Hooks: A Practical Guide"
 date: "2025-02-03"

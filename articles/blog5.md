@@ -1,9 +1,4 @@
 ---
-
-# 📝 **3. `ui-design-tips.md`**
-
-```markdown
----
 title: "7 UI Design Tips Every Developer Should Know"
 date: "2025-03-14"
 category: "Design"
