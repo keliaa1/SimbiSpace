@@ -6,7 +6,7 @@ export default function notfound() {
             <h2 className="text-black text-lg">Oops! Page not found, try again</h2></div>
 
             <div>
-                <img src="../public/confused1.png" alt="" />
+                <img src="/confused1.png" alt="" />
             </div>
         </div>
     );
