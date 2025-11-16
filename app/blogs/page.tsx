@@ -8,10 +8,11 @@ export default function Blogs() {
             <h1>View a list of blogs I created!</h1>
 
         </header>
-        <section className="md:grid md:grid-cols-w xl:grid-cols-3 flex flex-col gap-10"></section>
+        <section className="md:grid md:grid-cols-w  flex flex-col gap-10">
         {articles!==null && Object.keys(articles).map((article)=>(
         <ArticleItemList category={article} articles={articles[article]} key={article} />
     ))}
+       </section>
        </section>
     );
 }
