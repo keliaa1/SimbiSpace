@@ -1,1 +1,8 @@
 @import "tailwindcss";
+@theme {
+  --font-poppins: "Poppins", sans-serif;
+  --font-cormorant-garamond: "Cormorant Garamond", serif;
+}
+.article{
+    @apply text-lg flex flex-col tracking-wide mb-20 font-poppins
+}
