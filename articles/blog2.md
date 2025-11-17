@@ -10,6 +10,8 @@ tags:
 description: "Quick and practical tips to improve your React code."
 ---
 
+![keliaa](/tush.jpg)
+
 # 10 Useful React Tips Every Developer Should Know
 
 React is powerful, but writing clean React code takes practice.
