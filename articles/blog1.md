@@ -10,6 +10,7 @@ tags:
   - react
 description: "A beginner-friendly guide on how to build a blog using Markdown files and Next.js."
 ---
+![kateee](/kate.jpg)
 
 # How to Build a Simple Blog in Next.js
 
