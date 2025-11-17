@@ -9,6 +9,7 @@ tags:
   - javascript
 description: "Learn the core concepts of Next.js including pages, routing, and rendering."
 ---
+![wassup](/cool_kids.jpg)
 
 # A Beginner’s Introduction to Next.js
 
