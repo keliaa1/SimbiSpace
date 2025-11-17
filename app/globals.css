@@ -5,6 +5,12 @@
   --font-family-poppins: "Poppins", sans-serif;
   --font-family-cormorant-garamond: "Cormorant Garamond", serif;
 }
+h1{
+  font-family: var(--font-family-cormorant-garamond);
+}
+h2{
+  font-family: var(--font-family-cormorant-garamond);
+}
 
 .article {
   @apply text-lg flex flex-col tracking-wide mb-20;
@@ -36,4 +42,7 @@
 
 .article > blockquote {
   @apply pl-5 italic border-l-2 border-neutral-600;
+}
+.article>p>img{
+  @apply mx-auto w-1/2 h-1/2;
 }
