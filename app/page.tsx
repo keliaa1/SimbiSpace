@@ -1,4 +1,5 @@
 
+import { SparklesPreview } from "@/components/sparkes";
 import Link from "next/link";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
 
     <div className=" min-h-screen flex flex-col items-center justify-center">
       <h2 className="text-6xl text-[#A18072] font-bold mb-5 ">Welcome to SimbiSpace</h2>
+      <SparklesPreview />
       <span className="text-black"><i>A personal blog made by Kelia</i></span>
       <Link href="/blogs" className="bg-[#8B6F47] text-white font-semibold px-4 py-4 rounded-4xl mt-8" >View my inner thoughts!</Link>
     </div>

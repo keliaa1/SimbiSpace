@@ -10,8 +10,12 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
+    "@tsparticles/engine": "^3.9.1",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.9.1",
     "gray-matter": "^4.0.3",
     "moment": "^2.30.1",
+    "motion": "^12.23.24",
     "next": "16.0.1",
     "react": "19.2.0",
     "react-dom": "19.2.0",
