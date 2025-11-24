@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond,  Poppins } from "next/font/google";
 import "./globals.css";
-
+import { Suspense } from "react";
+import Loading from "./loading";
 const CormorantGaramond = Cormorant_Garamond({
   subsets: ["latin"],
   variable: "--font-cormorant-garamond",
@@ -29,9 +30,10 @@ export default function RootLayout({
       <body
         className={`${CormorantGaramond.variable} ${PoppinsFont.variable} bg-[#F7EEE9] antialiased`}
       >
+        <Suspense fallback={<Loading />}>
 
         {children}
-
+        </Suspense>
       </body>
     </html>
   );
