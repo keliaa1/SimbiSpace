@@ -4,6 +4,28 @@
 @theme {
   --font-family-poppins: "Poppins", sans-serif;
   --font-family-cormorant-garamond: "Cormorant Garamond", serif;
+
+  --animate-bounce-slow: bounce-slow 2s infinite ease-in-out;
+  --animate-cat-run: cat-run 0.5s steps(4) infinite;
+
+  @keyframes bounce-slow {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  @keyframes cat-run {
+    from { background-position: 0px; }
+    to { background-position: -256px; } /* 4 frames * 64px */
+  }
+}
+
+.pixelated {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.flip-horizontal {
+  transform: scaleX(-1);
 }
 h1{
   font-family: var(--font-family-cormorant-garamond);
