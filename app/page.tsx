@@ -34,14 +34,31 @@ export default function Home() {
            initial={{ y: 20, opacity: 0 }}
            animate={{ y: 0, opacity: 1 }}
            transition={{ delay: 0.6 }}
+           className="flex flex-col md:flex-row gap-6 mt-10 justify-center"
         >
           <Link
             href="/blogs"
-            className="inline-block bg-[#8B6F47] text-white font-poppins font-semibold px-8 py-4 rounded-full mt-10 hover:bg-[#6F5939] hover:scale-105 transition-all shadow-lg hover:shadow-[#A18072]/20"
+            className="inline-block bg-[#8B6F47] text-white font-poppins font-semibold px-8 py-4 rounded-full hover:bg-[#6F5939] hover:scale-105 transition-all shadow-lg hover:shadow-[#A18072]/20"
           >
             Explore My Thoughts
           </Link>
+          <Link
+            href="https://keliais4ward.vercel.app/"
+            target="_blank"
+            className="inline-block bg-transparent border-2 border-[#8B6F47] text-[#8B6F47] font-poppins font-semibold px-8 py-4 rounded-full hover:bg-[#8B6F47] hover:text-white hover:scale-105 transition-all shadow-lg hover:shadow-[#A18072]/20"
+          >
+            View My Portfolio
+          </Link>
         </motion.div>
+
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.0, duration: 1 }}
+          className="mt-16 text-sm text-[#A18072]/60 font-poppins italic"
+        >
+          a break from the darkness if you came from my portfolio
+        </motion.p>
       </motion.div>
     </div>
   );

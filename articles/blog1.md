@@ -1,41 +1,46 @@
 ---
-title: "How to Build a Simple Blog in Next.js"
-date: "2025-11-16"
-category: "Web Development"
+title: "How Frontend Became My Thing"
+date: "2026-01-15"
+category: "Technology"
 author: "Kelia"
 tags:
-  - nextjs
-  - markdown
-  - blogging
-  - react
-description: "A beginner-friendly guide on how to build a blog using Markdown files and Next.js."
+  - frontend
+  - web-development
+  - personal-journey
+  - rwanda-coding-academy
+description: "My personal journey into frontend development and how studying at Rwanda Coding Academy shaped my passion for building user-focused web interfaces."
 ---
-![kateee](/kate.jpg)
+![frontend-journey](/frontend.png)
 
-# How to Build a Simple Blog in Next.js
+# How Frontend Became My Thing
 
-Building a blog in Next.js using Markdown is one of the easiest ways to manage content without a database.
+I didn’t always know I wanted to do frontend development. At first, I was just curious about how websites worked—how buttons respond, how pages move, and how designs turn into something real on a screen. I started small, experimenting with basic HTML and CSS, and honestly, just seeing things change when I refreshed the browser felt exciting.
 
-## Why Use Markdown for Blogs?
+## Getting the Opportunity at Rwanda Coding Academy
 
-Markdown is simple, readable, and works perfectly with static site generation.
+Things really started to shift when I got the opportunity to study at **Rwanda Coding Academy**. Being there exposed me to real programming concepts, problem-solving, and a tech-focused environment that pushed me to think bigger. It wasn’t just about learning code anymore—it was about building skills that could actually create impact.
 
-## Step 1: Create Your Markdown Files
+## Why Frontend Stood Out to Me
 
-Store your blog posts inside a `/posts` folder.
+As I learned more, I found myself drawn to frontend development. I liked the fact that frontend sits right at the intersection of logic and creativity. You’re not only thinking about how code works, but also about how users feel when they interact with what you build.
 
-## Step 2: Add Metadata With Front Matter
+A clean layout, smooth animations, or a responsive design can completely change the experience.
 
-Front matter gives your post:
+## Learning Through Mistakes
 
-- Title
-- Date
-- Category
-- Tags
+Of course, the journey hasn’t been perfect. I’ve broken layouts, struggled with responsiveness, and spent way too much time fixing tiny UI bugs. But each mistake taught me something new.
 
-## Step 3: Parse Markdown in Next.js
+Over time, I started exploring:
+- Component-based design
+- Animations and motion
+- 3D experiences on the web
 
-Use `gray-matter` and `remark` to convert the `.md` file into HTML.
+That’s when frontend stopped feeling like *just code* and started feeling like a craft.
 
-```js
-console.log("Hello world from code block!");
+## Where I’m Headed
+
+Today, I’m focused on growing into a strong frontend developer who can turn ideas into polished, interactive experiences. I want to build interfaces that are simple, fast, and visually engaging—interfaces that actually make sense to users.
+
+Being at **Rwanda Coding Academy** has given me the foundation and confidence to aim higher and keep pushing myself.
+
+This blog is where I share that journey—what I’m learning, what I’m building, and how I’m growing as a frontend developer.

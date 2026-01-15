@@ -1,43 +1,29 @@
 "use client";
 
-import React, { useEffect, useState, useRef } from "react";
-import { motion, useSpring, useMotionValue, useTransform } from "motion/react";
+import React, { useEffect, useState } from "react";
+import { motion, useSpring, useMotionValue } from "motion/react";
 
 const CursorFollower = () => {
   const [mounted, setMounted] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
-  const [isMoving, setIsMoving] = useState(false);
-  const [isFacingRight, setIsFacingRight] = useState(true);
 
+  // Motion values for mouse position
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
 
-  const lastX = useRef(0);
-  const moveTimeout = useRef<NodeJS.Timeout | null>(null);
-
-  // Smooth springs for "trailing" effect
-  const springConfig = { damping: 20, stiffness: 100 };
-  const catX = useSpring(mouseX, springConfig);
-  const catY = useSpring(mouseY, springConfig);
+  // Smooth springs for cursor movement
+  const springConfig = { damping: 25, stiffness: 150 }; // Slightly adjusted for a tighter feel
+  const cursorX = useSpring(mouseX, springConfig);
+  const cursorY = useSpring(mouseY, springConfig);
 
   useEffect(() => {
     setMounted(true);
 
     const handleMouseMove = (e: MouseEvent) => {
+      // Ensure cursor is visible on move
       if (!isVisible) setIsVisible(true);
 
-      const currentX = e.clientX;
-      if (currentX > lastX.current + 2) {
-        setIsFacingRight(true);
-      } else if (currentX < lastX.current - 2) {
-        setIsFacingRight(false);
-      }
-      lastX.current = currentX;
-
-      setIsMoving(true);
-      if (moveTimeout.current) clearTimeout(moveTimeout.current);
-      moveTimeout.current = setTimeout(() => setIsMoving(false), 100);
-
+      // Update target motion values
       mouseX.set(e.clientX);
       mouseY.set(e.clientY);
     };
@@ -62,28 +48,26 @@ const CursorFollower = () => {
     <motion.div
       style={{
         position: "fixed",
-        top: -16, // Center cat relative to cursor
-        left: -16,
-        x: catX,
-        y: catY,
+        top: -8, // Center dot (16px / 2)
+        left: -8,
+        x: cursorX,
+        y: cursorY,
         pointerEvents: "none",
         zIndex: 9999,
         display: isVisible ? "block" : "none",
       }}
-      initial={{ opacity: 0, scale: 0.5 }}
+      initial={{ opacity: 0, scale: 0 }}
       animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.3 }}
+      exit={{ opacity: 0, scale: 0 }}
+      transition={{ duration: 0.2 }}
     >
-    
       <div
-        className={`w-16 h-16 pixelated ${!isFacingRight ? "flip-horizontal" : ""}`}
         style={{
-          backgroundImage: `url('/pixel-cat-run-v2.png')`,
-          backgroundSize: '256px 64px',
-          backgroundRepeat: 'no-repeat',
-          animation: isMoving
-            ? 'cat-run 0.4s steps(4) infinite'
-            : 'bounce-slow 2s infinite ease-in-out'
+          width: "16px",
+          height: "16px",
+          backgroundColor: "white",
+          borderRadius: "50%",
+          boxShadow: "0 0 10px 2px rgba(255, 255, 255, 0.6), 0 0 20px 5px rgba(255, 255, 255, 0.3)",
         }}
       />
     </motion.div>
