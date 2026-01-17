@@ -1,6 +1,6 @@
 # 🌸 SimbiSpace — Personal Blog
 
-KeliaWrites is a modern and minimal blog built with **Next.js**.  
+SimbiSpace is a modern and minimal blog built with **Next.js**.  
 It’s a digital space where I share thoughts, stories, and lessons from my personal and tech journey — all in a clean, responsive design.
 
 ---
