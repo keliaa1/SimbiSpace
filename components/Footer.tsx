@@ -8,14 +8,14 @@ const Footer = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ delay: 0.2 }}
-      className="w-full py-12 px-8 flex flex-col items-center justify-center border-t border-[#A18072]/10 mt-20"
+      className="w-full py-12 px-8 flex flex-col items-center justify-center border-t-[3px] border-neutral-900 bg-neutral-200"
     >
       <div className="flex gap-6 mb-6">
-        <a href="#" className="text-2xl text-[#A18072] hover:scale-125 transition-transform">🪶</a>
-        <a href="#" className="text-2xl text-[#A18072] hover:scale-125 transition-transform">✨</a>
-        <a href="#" className="text-2xl text-[#A18072] hover:scale-125 transition-transform">🌿</a>
+        <a href="#" className="text-2xl text-neutral-900 hover:-translate-y-1 transition-transform">🪶</a>
+        <a href="#" className="text-2xl text-neutral-900 hover:-translate-y-1 transition-transform">✨</a>
+        <a href="#" className="text-2xl text-neutral-900 hover:-translate-y-1 transition-transform">🌿</a>
       </div>
-      <p className="font-poppins text-xs text-neutral-500 uppercase tracking-[0.2em]">
+      <p className="font-poppins text-xs font-bold text-neutral-900 uppercase tracking-[0.2em]">
         Made with love by Kelia • SimbiSpace © {new Date().getFullYear()}
       </p>
     </motion.footer>

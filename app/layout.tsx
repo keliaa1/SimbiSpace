@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond,  Poppins } from "next/font/google";
+import { Space_Grotesk, DM_Sans } from "next/font/google";
 import "./globals.css";
 import { Suspense } from "react";
 import Loading from "./loading";
@@ -7,16 +7,16 @@ import CursorFollower from "@/components/CursorFollower";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const CormorantGaramond = Cormorant_Garamond({
+const SpaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
-  variable: "--font-cormorant-garamond",
-  weight: ["400"]
+  variable: "--font-cormorant-garamond", // keeping variable name for compatibility or change it if we want
+  weight: ["400", "500", "600", "700"]
 });
 
-const PoppinsFont = Poppins({
+const DMSans = DM_Sans({
   subsets: ["latin"],
-  variable: "--font-poppins",
-  weight: ["400",  "600"]
+  variable: "--font-poppins", // keeping variable name to avoid breaking existing classes instantly, but we can change it
+  weight: ["400", "500", "700"]
 });
 
 export const metadata: Metadata = {
@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${CormorantGaramond.variable} ${PoppinsFont.variable} bg-[#F7EEE9] antialiased`}
+        className={`${SpaceGrotesk.variable} ${DMSans.variable} bg-[#F7EEE9] text-neutral-900 border-neutral-900 antialiased`}
       >
         <Suspense fallback={<Loading />}>
           <CursorFollower />
