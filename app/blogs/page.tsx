@@ -18,8 +18,8 @@ export default function Blogs() {
                 I&apos;m a software engineer and this is my little corner of the internet.
              </p>
              <div>
-               <Link href="/" className="retro-btn inline-flex bg-neutral-200">
-                  Clone me on Webflow {/* Keeping text similar to screenshot or something playful */}
+               <Link href="/https://github.com/keliaa1" className="retro-btn inline-flex bg-neutral-200">
+                  Follow me on Github {/* Keeping text similar to screenshot or something playful */}
                </Link>
              </div>
            </div>
@@ -43,9 +43,9 @@ export default function Blogs() {
                <h2 className="font-cormorant font-bold text-3xl mb-4">Quick links</h2>
                <div className="flex flex-wrap border-[3px] border-neutral-900 bg-[#F7EEE9]">
                  {["Blog", "Projects", "About", "Contact"].map((link, i, arr) => (
-                    <Link 
-                      href="#" 
-                      key={link} 
+                    <Link
+                      href="#"
+                      key={link}
                       className={`flex-1 min-w-[150px] p-4 flex justify-between items-center font-bold text-lg hover:bg-white transition-colors
                         ${i !== arr.length - 1 ? 'border-b-[3px] md:border-b-0 md:border-r-[3px] border-neutral-900' : ''}
                       `}
@@ -67,14 +67,14 @@ export default function Blogs() {
                  <div className="retro-window-header">
                    <div className="retro-dot"></div>
                    <div className="retro-dot"></div>
-                   <span className="absolute left-1/2 -translate-x-1/2 text-xs font-bold font-poppins">2026-03-17-project.html</span>
+                   <span className="absolute left-1/2 -translate-x-1/2 text-xs font-bold font-poppins">2026-03-17-mento.html</span>
                  </div>
                  <div className="h-48 bg-neutral-300 border-b-[3px] border-neutral-900 shrink-0">
                     <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&q=80" alt="retro computer" className="w-full h-full object-cover grayscale" />
                  </div>
                  <div className="p-6 flex flex-col gap-4 flex-1">
-                    <h3 className="font-cormorant font-bold text-2xl">Possimus</h3>
-                    <p className="text-sm font-medium text-neutral-700">Officia sit numquam fugiat sint molestiae id. Est modi est at debitis dolorem...</p>
+                    <h3 className="font-cormorant font-bold text-2xl">Mento</h3>
+                    <p className="text-sm font-medium text-neutral-700">Fullstack notion clone created to manage and create documents. View more on my portfolio.</p>
                     <div className="mt-auto pt-4">
                        <button className="retro-btn text-xs py-2 px-4 shadow-[4px_4px_0_0_#000]">View project</button>
                     </div>
@@ -85,14 +85,14 @@ export default function Blogs() {
                  <div className="retro-window-header">
                    <div className="retro-dot"></div>
                    <div className="retro-dot"></div>
-                   <span className="absolute left-1/2 -translate-x-1/2 text-xs font-bold font-poppins">2026-03-17-project.html</span>
+                   <span className="absolute left-1/2 -translate-x-1/2 text-xs font-bold font-poppins">2026-03-17-e-gate.html</span>
                  </div>
                  <div className="h-48 bg-neutral-300 border-b-[3px] border-neutral-900 shrink-0">
                     <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80" alt="retro circuit" className="w-full h-full object-cover grayscale" />
                  </div>
                  <div className="p-6 flex flex-col gap-4 flex-1">
-                    <h3 className="font-cormorant font-bold text-2xl">Dolorum Ullam Totam</h3>
-                    <p className="text-sm font-medium text-neutral-700">Consequatur consequatur et quisquam sit velit. Distinctio sint omnis...</p>
+                    <h3 className="font-cormorant font-bold text-2xl">E-gate</h3>
+                    <p className="text-sm font-medium text-neutral-700">A digital visitor registration system</p>
                     <div className="mt-auto pt-4">
                        <button className="retro-btn text-xs py-2 px-4 shadow-[4px_4px_0_0_#000]">View project</button>
                     </div>

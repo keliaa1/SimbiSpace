@@ -41,7 +41,7 @@ export default function NotFound() {
         <svg width="100%" height="100%" viewBox="0 0 400 800" preserveAspectRatio="xMinYMid slice" xmlns="http://www.w3.org/2000/svg">
           {/* Top Wire meandering down */}
           <path d="M 0,0 C 150,150 -50,300 180,440" stroke="currentColor" strokeWidth="3" fill="none" />
-          
+
           {/* Top Plug Head */}
           <g transform="translate(180,440) rotate(-25)">
              <path d="M 0,-14 L 30,-14 C 35,-14 40,-8 40,-2 L 40,2 C 40,8 35,14 30,14 L 0,14 C -4,14 -8,10 -8,4 L -8,-4 C -8,-10 -4,-14 0,-14 Z" fill="currentColor" />
@@ -66,7 +66,7 @@ export default function NotFound() {
             <line x1="160" y1="440" x2="150" y2="430" />
             <line x1="190" y1="420" x2="185" y2="405" />
             <line x1="220" y1="420" x2="230" y2="410" />
-            
+
             <line x1="130" y1="475" x2="115" y2="465" />
             <line x1="135" y1="510" x2="120" y2="515" />
             <line x1="180" y1="500" x2="190" y2="515" />
@@ -78,17 +78,14 @@ export default function NotFound() {
       {/* Content */}
       <div className="relative z-10 w-full max-w-[28rem] text-center px-4 md:ml-[15%]">
         <h1 className="text-[2.75rem] md:text-5xl font-extrabold mb-4 tracking-tight drop-shadow-sm text-[#050710]">
-          Access Denied
+          Oops! you got lost
         </h1>
         <p className="text-[15px] md:text-[15px] font-medium mb-8 leading-relaxed text-[#050710]/80 px-2">
-          You don&apos;t have permission to view this feature.<br className="hidden sm:block"/> Please upgrade your plan or log in to continue.
+          Let&apos;s get you back home.<br className="hidden sm:block"/> safe and sound
         </p>
         <div className="flex items-center justify-center gap-5">
            <Link href="/" className="bg-[#050710] text-[#FDFBF7] px-6 py-3 rounded-lg font-semibold shadow-[0_8px_15px_rgba(5,7,16,0.2)] hover:bg-black hover:-translate-y-0.5 transition-all text-[15px]">
-             Upgrade Now
-           </Link>
-           <Link href="/" className="flex items-center gap-2 font-bold text-[#050710] hover:opacity-75 transition-opacity text-[15px]">
-            <User className="w-[18px] h-[18px]" strokeWidth={2.5} /> Log in
+             Back home
            </Link>
         </div>
       </div>

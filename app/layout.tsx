@@ -40,7 +40,6 @@ export default function RootLayout({
           <main className="pt-24 min-h-screen">
             {children}
           </main>
-          <Footer />
         </Suspense>
       </body>
     </html>
