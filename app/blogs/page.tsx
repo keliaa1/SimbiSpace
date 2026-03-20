@@ -18,7 +18,7 @@ export default function Blogs() {
                 I&apos;m a software engineer and this is my little corner of the internet.
              </p>
              <div>
-               <Link href="/https://github.com/keliaa1" className="retro-btn inline-flex bg-neutral-200">
+               <Link href="https://github.com/keliaa1" className="retro-btn inline-flex bg-neutral-200">
                   Follow me on Github {/* Keeping text similar to screenshot or something playful */}
                </Link>
              </div>
@@ -76,7 +76,7 @@ export default function Blogs() {
                     <h3 className="font-cormorant font-bold text-2xl">Mento</h3>
                     <p className="text-sm font-medium text-neutral-700">Fullstack notion clone created to manage and create documents. View more on my portfolio.</p>
                     <div className="mt-auto pt-4">
-                       <button className="retro-btn text-xs py-2 px-4 shadow-[4px_4px_0_0_#000]">View project</button>
+                       <a href="https://github.com/keliaa1/" target="_blank"><button className="retro-btn text-xs py-2 px-4 shadow-[4px_4px_0_0_#000]">View project</button></a>
                     </div>
                  </div>
                </div>
@@ -94,7 +94,7 @@ export default function Blogs() {
                     <h3 className="font-cormorant font-bold text-2xl">E-gate</h3>
                     <p className="text-sm font-medium text-neutral-700">A digital visitor registration system</p>
                     <div className="mt-auto pt-4">
-                       <button className="retro-btn text-xs py-2 px-4 shadow-[4px_4px_0_0_#000]">View project</button>
+                       <a href="https://github.com/keliaa1/"><button className="retro-btn text-xs py-2 px-4 shadow-[4px_4px_0_0_#000]">View project</button></a>
                     </div>
                  </div>
                </div>

@@ -5,7 +5,6 @@ import { Suspense } from "react";
 import Loading from "./loading";
 import CursorFollower from "@/components/CursorFollower";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 
 const SpaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
